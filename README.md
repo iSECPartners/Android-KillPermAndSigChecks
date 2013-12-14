@@ -4,7 +4,7 @@ Bypass signature and permission checks for IPCs.
 
 Description
 -------
-It leverages Cydia Substrate to bypass signature and permission checks for IPCs. 
+It leverages Cydia Substrate to bypass signature and permission checks for IPCs.
 
 Usage
 -------
@@ -19,3 +19,4 @@ and requires a rooted device.
 Notes
 -------
 * This should only be used on test devices
+* The code also contains to bypass more general signature checks but it is disabled for now.
