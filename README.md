@@ -19,4 +19,4 @@ and requires a rooted device.
 Notes
 -------
 * This should only be used on test devices
-* The code also contains to bypass more general signature checks but it is disabled for now.
+* The code also contains code to bypass more general signature checks but it is disabled for now.
