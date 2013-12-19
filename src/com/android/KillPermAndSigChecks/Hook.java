@@ -45,8 +45,11 @@ public class Hook {
             });
 */
             
-            // TODO hook these methods only per app as it breaks the system for now
-            /*MS.hookClassLoad("java.security.Signature", new MS.ClassLoadHook() {
+			// Note: do not use this code system-wide
+            
+			// TODO, add a filter per application
+			
+			/*MS.hookClassLoad("java.security.Signature", new MS.ClassLoadHook() {
                 public void classLoaded(Class<?> _class) {
                     hookMethod(_class, "verify", 
                     		new Class<?>[] {byte[].class}, 
@@ -58,7 +61,8 @@ public class Hook {
             });*/
             
             // TODO, need to hook getPackage() and return a PM with no checks
-            /*MS.hookClassLoad("android.content.pm.PackageManager", new MS.ClassLoadHook() {
+            
+			/*MS.hookClassLoad("android.content.pm.PackageManager", new MS.ClassLoadHook() {
                 public void classLoaded(Class<?> _class) {
                 // implement the methods below with the PM:
                     "checkSignatures", new Class<?>[] {Integer.TYPE, Integer.TYPE}, 
